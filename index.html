@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan mobile design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <nav class="navTop">
+                <div class="nav-brand">
+                    <a href="#home">MyAps</a>
+                </div>
+                <div class="nav-toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+            <div class="search">
+                <div class="wrapper_search">
+                    <input type="text" placeholder="search your favorite menu..." class="input-search">
+                    <button class="btn-search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="wrapper_slider_promotion">
+                <div id="image-slider" class="splide">
+                    <div class="splide__track" style="border-radius: 8px;">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="img/1.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/2.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/3.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper_favorite_content">
+                <div class="favorite_items">
+                    <div class="favorite_icon">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="favorite_text">
+                        Semua
+                    </div>
+                </div>
+                <div class="favorite_items">
+                    <div class="favorite_icon">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                    </div>
+                    <div class="favorite_text">
+                        Kirim Paket
+                    </div>
+                </div>
+                <div class="favorite_items">
+                    <div class="favorite_icon">
+                        <i class="fa fa-cutlery" aria-hidden="true"></i>
+                    </div>
+                    <div class="favorite_text">
+                        Voucher Makan
+                    </div>
+                </div>
+                <div class="favorite_items">
+                    <div class="favorite_icon">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="favorite_text">
+                        Semua
+                    </div>
+                </div>
+                <div class="favorite_items">
+                    <div class="favorite_icon">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="favorite_text">
+                        Semua
+                    </div>
+                </div>
+                <div class="favorite_items">
+                    <div class="favorite_icon">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="favorite_text">
+                        Semua
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="wrapper_footer">
+                <div class="footer_items">
+                    <div class="footer_icon">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <div class="footer_text">
+                        Home
+                    </div>
+                </div>
+                <div class="footer_items">
+                    <div class="footer_icon">
+                        <i class="fa fa-user">
+                        </i>
+                    </div>
+                    <div class="footer_text">
+                        Akun
+                    </div>
+                </div>
+                <div class="footer_items">
+                    <div class="footer_icon">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="footer_text">
+                        Keranjang
+                    </div>
+                </div>
+                <div class="footer_items">
+                    <div class="footer_icon">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="footer_text">
+                        Menu
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <!-- script slider -->
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#image-slider' ).mount();
+        } );
+    </script>
+</body>
+</html>
