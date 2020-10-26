@@ -31,11 +31,13 @@
 }
 
 .search {
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 38px;
-  position: relative;
+  padding: 14px 0;
+  z-index: 3;
   background-color: #0095da;
-  margin-top: 10px;
 }
 
 .search .wrapper_search {
@@ -82,7 +84,6 @@
 .wrapper_slider_promotion {
   width: 100%;
   height: 160px;
-  margin: 20px auto;
   border-radius: 8px;
 }
 
@@ -132,9 +133,10 @@
 }
 
 .wrapper_list_product section.recomended_product {
+  width: 100%;
   background-color: white;
   border-radius: 8px;
-  padding: 10px 5px;
+  padding: 10px 16px;
   position: sticky;
   overflow-x: auto;
   box-shadow: 0 0 24px -4px rgba(0, 0, 0, 0.12);
@@ -210,20 +212,7 @@
   margin: 4px;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  width: 100%;
-}
-
-footer .wrapper_footer {
-  display: flex;
-  justify-content: space-between;
-}
-
-footer .wrapper_footer .footer_items {
+.wrapper_footer .footer_items {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,19 +221,19 @@ footer .wrapper_footer .footer_items {
   box-sizing: border-box;
 }
 
-footer .wrapper_footer .footer_items .footer_icon i {
+.wrapper_footer .footer_items .footer_icon i {
   color: black;
 }
 
-footer .wrapper_footer .footer_items .footer_icon i.active {
+.wrapper_footer .footer_items .footer_icon i.active {
   color: #66cfff;
 }
 
-footer .wrapper_footer .footer_items .footer_text {
+.wrapper_footer .footer_items .footer_text {
   font-size: 16px;
 }
 
-footer .wrapper_footer .footer_items .footer_text.active {
+.wrapper_footer .footer_items .footer_text.active {
   color: #66cfff;
 }
 
@@ -257,6 +246,16 @@ footer .wrapper_footer .footer_items .footer_text.active {
     width: 50px;
     padding: 15px;
   }
+  .wrapper_footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media only screen and (min-width: 380px) {
@@ -266,6 +265,15 @@ footer .wrapper_footer .footer_items .footer_text.active {
   }
   .wrapper_favorite_content .favorite_items {
     width: 100px;
+  }
+  .wrapper_footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
